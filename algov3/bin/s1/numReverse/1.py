@@ -5,8 +5,11 @@ def numberReverse(num):
     if num < 0:
         isLow = True
     toStr = str(num)
-    arr = list(toStr)
-    return arr.reverse()
-    
-
-print(numberReverse(12))
+    arr = list(reversed(toStr))
+    if isLow:
+      del  arr[-1]
+      arr.insert(0,'-')
+    str1 =''
+    return int(str1.join(arr))
+   
+print(numberReverse(-12))
