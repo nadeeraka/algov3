@@ -9,5 +9,4 @@ def numberReverse(num):
     return arr.reverse()
     
 
-
 print(numberReverse(12))
