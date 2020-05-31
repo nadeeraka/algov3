@@ -1,3 +1,10 @@
-def fizz_buzz_custom(string_one, string_two, num_one, num_two):
-    # your code here
-    pass
+def fizBuz(str):
+    if (str%2 ==1):
+       return 'fiz'
+    else:
+        return 'Buz'
+
+
+
+
+print(fizBuz(3))
