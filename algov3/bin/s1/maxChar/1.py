@@ -4,8 +4,6 @@ s = 'abcccc'
 def maxChar(str):
     myObj = dict()
     val = 0
-    if len(str) < 0:
-        return -1
     arr = list(str)
     for i in arr:
         if i in myObj:
@@ -15,9 +13,7 @@ def maxChar(str):
         for i in myObj:
             if val < myObj[i]:
                 val = myObj[i]
-       
-       
-    return [number for number, i in myObj.items() if i == val]
+    return [number for number, i  in myObj.items() if i == val] #List Comprehensions
 
 
 print(maxChar(s))
